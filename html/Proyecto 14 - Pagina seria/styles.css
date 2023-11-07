@@ -1,0 +1,108 @@
+@font-face { /* GraphikCompact para H1, H2, H3, H4, H5*/
+    src: url(fonts/Graphik-Bold-Trial.otf);
+    font-family: 'Graphik Web';
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face { /* Graphik Web para PARRAFOS*/
+    font-family: 'Graphik Web';
+    src: url(fonts/Graphik-Regular-Trial.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* GLOBAL */
+
+:root {
+    --text: rgb(4, 16, 12);
+    /* --background: rgb(231, 249, 243); */
+    --background: rgb(27, 219, 155);
+    --primary: rgb(100, 216, 179);
+    --secondary: rgb(186, 238, 221);
+    --accent: rgb(44, 175, 134);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+
+*, *::after, *::before {
+    box-sizing: inherit
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Graphik Web', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    letter-spacing: -.8;
+    line-height: 1.15;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    letter-spacing: -.5;
+    line-height: 36px;
+    font-family: 'Graphik Web';
+    font-weight: 400;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 66px;}
+
+h2 {font-size: 40px;}
+
+h3 {font-size: 24px;}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+
+/* HERRAMIENTAS PARA JS, seguramente mas tarde agregue */
+
+
+/**/
+
+
+/* emm header */
+
+.header {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+}
+
+.header__navbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
