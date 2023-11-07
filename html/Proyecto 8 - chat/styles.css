@@ -1,0 +1,136 @@
+:root {
+    --text: rgb(220, 239, 239);
+    --background: #1a1a1a;
+    --primary: rgb(38, 80, 80);
+    --secondary: rgb(23, 49, 49);
+    --accent: rgb(45, 58, 58);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+}
+
+/* herramientas */
+
+.chat-text2 {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    outline: none;
+
+
+    &:active {
+        border: bottom;
+    }
+
+    &:focus {
+        border: bottom;
+    }
+}
+
+.chat-text {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    outline: none;
+
+
+    &:active {
+        border: bottom;
+    }
+
+    &:focus {
+        border: bottom;
+    }
+}
+
+.desc-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+}
+
+.chat-submit {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    transition: transform .1s ease;
+
+    &:focus {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+
+.chat-submit2 {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    transition: transform .1s ease;
+
+    &:focus {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(1.1);
+    }
+}
+/* contenido*/
+
+.space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 60vw;
+    height: 60vh;
+    background-color: var(--primary);
+    border-radius: 10px 80px;
+}
+
+.conteiner__chat {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+    margin: 5% 15%;
+}
+
+.chat-space {
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.conteiner__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15%;
+    padding: 5%;
+}

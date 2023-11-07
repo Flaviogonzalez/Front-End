@@ -1,0 +1,187 @@
+/* paleta de colores */
+
+:root {
+    --text: #131113;
+    --background: #e9e7e9;
+    --primary-button: #ae2da4;
+    --secondary-button: #f5f4f4;
+    --accent: #5d1857;
+}
+
+
+
+
+/* codigo general */
+
+
+
+
+html, body {
+    font-size: 62.5%;
+    background-color: var(--background);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0 15%;
+    gap: 4em;
+    color: var(--text);
+    font-size: 16px; /* 1 rem = 10 px */
+    font-family: 'Krub', sans-serif;
+}
+
+h2 {
+    font-size: 2.6rem;
+    color: var(--text)
+}
+
+span {
+    color: var(--accent);
+}
+
+.primary-button {
+    background-color: var(--primary-button);
+    border-radius: 6px;
+    display: inline-block;
+
+    transition: transform ease 0.2s;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
+/* media queries */
+
+    /* cabezera */
+
+
+@media (min-width: 1366px) {
+    .cabezera-panel {
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .cabezera-panel {
+        align-items: center;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 640px) {
+    .cabezera-panel {
+        align-items: center;
+    }
+}
+
+
+/* el titulo y eso */
+
+
+
+
+.cabezera-panel {
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cabezera-texto {
+    font-size: 3.8rem;
+    color: var(--text);
+}
+
+.Papirola {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+
+
+
+/* navegacion de links */
+
+
+
+
+.navegacion-principal a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+
+
+/* fondo con la imagen y el texto "3 razones por las cuales te gorrean*/
+
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/* contenedor de checkinfo */
+
+
+
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.12);;
+}
+
+.widget-bar {
+    text-align: center;
+    height: 400px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* formulario = container-contact*/
+
+.container-contact {
+    border: none;
+}
+
+.container-contact legend {
+    text-align: center;
+}

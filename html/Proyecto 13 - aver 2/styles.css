@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+:root {
+    --text: rgb(5, 2, 9);
+    --background: rgb(244, 238, 252);
+    --primary: rgb(154, 90, 226);
+    --secondary: rgb(228, 212, 247);
+    --accent: rgb(122, 38, 217);
+}
+
+:root[data-theme="light"] {
+    --text: rgb(4, 2, 8);
+    --background: rgb(244, 238, 252);
+    --primary: rgb(154, 90, 226);
+    --secondary: rgb(228, 212, 247);
+    --accent: rgb(122, 38, 217);
+}
+
+:root[data-theme="dark"] {
+    --text: rgb(249, 247, 253);
+    --background: rgb(9, 3, 17);
+    --primary: rgb(92, 29, 165);
+    --secondary: rgb(24, 8, 43);
+    --accent: rgb(122, 38, 217);
+}
+  
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+/* contenido */
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+
+    display: grid;
+    place-items: center;
+}
+
+.container {
+
+    position: relative;
+
+    transition: all 0.1s ease;
+
+    background-color: var(--primary);
+
+    height: 80%;
+    width: 80%;
+
+    box-shadow: 2px 2px 24px 0.1px rgba(0,0,0,0.3);
+    padding: 2%;
+
+    overflow: hidden;
+    
+}
+
+.prueba {
+    background-color: aqua;
+}

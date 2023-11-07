@@ -1,0 +1,220 @@
+:root {
+    --text: rgb(8, 8, 7);
+    --background: rgb(237, 238, 236); /* color de fondo */
+    --primary: rgb(162, 164, 157); /* para cuadros */
+    --secondary: rgb(210, 211, 207); /* para botones */
+    --accent: rgb(90, 90, 90); /* para cuadros dentro de cuadros */
+
+    --fuente: 'Nunito', sans-serif,'Krub', sans-serif;
+}
+
+/* globales */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::after, *::before {box-sizing: inherit;}
+
+body {
+    background-color: var(--background);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--fuente);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--text);
+    font-family: var(--fuente);
+}
+
+h1 {font-size: 40px;}
+
+h2 {font-size: 32px;}
+
+h3 {font-size: 24px;}
+
+/* Herramientas */
+
+
+.linea-gris {
+    height: 1px;
+    margin: 0 auto;
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(208,215,219,.8);
+}
+
+.mtop-96 {
+    margin-top: 96px;
+    margin-bottom: 96px;
+} */
+
+.w-100 {
+    width: 100%;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    background-color: var(--primary);
+}
+
+.header__logo {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__nav__link--active,
+.header__nav__link:hover {
+    color: var(--secondary);
+}
+
+/* main */
+
+    /* grid */
+
+.conteiner {
+    margin: 2% 15%;
+}
+
+.conteiner__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+    /* cartas */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__nick {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0;
+}
+
+.card__price {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* background */
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 80px;
+}
+
+.background--camisas {
+    background-image: url(img/grafico1.jpg);
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.background--nodejs {
+    background-image: url(img/grafico2.jpg);
+    grid-row: 5 / 6;
+    grid-column: -1 / -3;
+}
+
+/* nosotros page */
+
+.nosotros {
+    padding: 20px;
+    background-color: var(--secondary);
+    border-radius: 20px 80px;
+}
+
+.nosotros__content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px;
+}
+
+.nosotros__text {
+    text-align: center;
+}
+
+.nosotros__img {
+    width: 100%;
+    border-radius: 10px 60px;
+}
+
+/* icons - nosotros page */
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.icons_icon {
+    background-color: var(--secondary);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*  */
+
+/* footer */
+
+.footer {
+    background-color: var(--accent);
+    padding: 10px 0;
+}

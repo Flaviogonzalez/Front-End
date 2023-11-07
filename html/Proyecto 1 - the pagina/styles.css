@@ -1,0 +1,260 @@
+:root {
+    --text: #131b1b;
+    --background: #f4f1f2;
+    --primary: #56697b;
+    --secondary: #c9c9d9;
+    --accent: #2c2c3f;
+    --accent2: #444564;
+}
+
+/* general */
+
+html, body {
+    font-size: 62.5%;
+    background-color: var(--background);
+    box-sizing: border-box;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0 15%;
+    gap: 4em;
+    color: var(--text);
+    font-size: 16px; /* 1 rem = 10 px */
+    font-family: 'Krub', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 20px;
+
+}
+
+
+/* Boton*/
+
+
+button {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--primary);
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+    overflow: hidden;
+    
+    &:hover {
+        opacity: .8;
+    }
+}
+
+
+/* Input */
+
+
+input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    padding: 1.5rem;
+    width: auto;
+    margin: 10px;
+    outline: none;
+
+    &:focus {
+        border: bottom;
+    }
+
+    &:active {
+        border: bottom;
+    }
+}
+
+/* CHROME, SAFARI, EDGE */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+/* 
+input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+svg {
+    padding: 5px;
+    background-color: var(--background);
+    border-radius: 10px
+}
+
+.nav-conteiner,
+.apertura, .las-tipicas-3-cartas,
+.caracteristicas, .payment-panel {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+/* utilidades */
+
+.linea-gris {
+    position: relative;
+    z-index: 2;
+    height: 1px;
+    margin: 0 auto;
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-column: 1 / 3;
+    background-color: rgba(208,215,219,.8);
+}
+
+.mtop-96 {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* nav conteiner */
+
+.nav-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+}
+
+/* apertura - lado izquierdo */
+
+.apertura {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 240px;
+}
+
+.apertura-titulo {
+    font-size: 40px;
+    margin: 0;
+}
+
+.apertura-subtitulo {
+    font-weight: 400;
+}
+
+/* apertura panel - lado derecho*/
+
+.apertura-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    padding: 40px 160px 40px 60px;
+    background-color: var(--secondary);
+    border-radius: 10px 50px;
+}
+
+/* las tipicas 3 cartas */
+
+.las-tipicas-3-cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.cartas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--secondary);
+    padding: 40px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* caracteristicas */
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 60px;
+    height: 500px;
+    background-color: var(--accent);
+    color: var(--background);
+    border-radius: 10px 50px;
+}
+
+.caracteristicas-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--accent2);
+    border-radius: 10px 50px;
+}
+
+.caracteristicas-titulo {
+    font-size: 30px;
+    margin: 0;
+}
+
+.caracteristicas-subtitulo {
+    font-weight: 400;
+}
+
+.caracteristicas-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--accent2);
+    border-radius: 10px 50px;
+}
+
+.caracteristicas-elements-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* payment */
+
+.payment-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 100%;
+}
+
+.payment {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary);
+    border-radius: 20px;
+}

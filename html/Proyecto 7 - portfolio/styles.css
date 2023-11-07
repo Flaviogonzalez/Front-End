@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    background: black;
+    font-family: "cormorant garamond", serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: clamp(10px, 5vw, 50px);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-right: -5px;
+    color: #ccc;
+    width: 90vw;
+    max-width: 1200px;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+    z-index: 3;
+    height: 7em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(0.66rem, 2vw, 1rem);
+    letter-spacing: 0.5em;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    visibility: hidden;
+}
+
+section .outer,
+section .inner {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+section .bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+section .bg h2 {
+    z-index: 2;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+}
+
+p {
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 * {
+    will-change: transform;
+}
+
+section .bg .clip-text { /* creo que es la animacion del texto*/
+    overflow: hidden;
+}
+
+.first .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/1.png');
+}
+
+.second .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/2.png');
+}
+
+.third .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/3.jpg');
+}
+
+.four .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/4.png');
+}
+
+.five .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/5.png');
+}
+
+.six .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/6.jpg');
+}
+
+.seven .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/7.jpg');
+}
+
+.eight .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/8.jpg');
+}
+
+.nine .bg {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url('img/9.png');
+}
+
+/* portfolio */
+
+.portfolio {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+}

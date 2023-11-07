@@ -1,0 +1,97 @@
+/* card */
+
+
+
+
+.panel {
+    width: 1380px;
+    height: 287.73px;
+    margin: auto;
+    gap: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    background-color: rgb(66, 66, 66);
+    overflow: hidden;
+}
+
+.card-img-top {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    top: 25%;
+}
+
+.card-title, .card-subtitle {
+    opacity: 0;
+    color: rgb(220, 220, 220);
+}
+
+/* card animation : troll face*/
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .card-img-top{
+    bottom: 25%;
+    transform: translateY(-50%);
+    transition: transform 300ms;
+}
+
+.card:not(:hover) .card-img-top{
+    transform: translateY(0%);
+    transition: transform 300ms;
+}
+
+.card:hover .card-title,
+.card:hover .card-subtitle {
+    opacity: 1;
+    transition: opacity 0.75s;
+    color: var(--negro);
+}
+
+.card:not(:hover) .card-title,
+.card:not(:hover) .card-subtitle {
+    opacity: 0;
+    transition: opacity 150ms;
+}
+
+/* el coso blanco animacion*/
+
+.card::before, .card::after {
+    content: '';
+    position: absolute; /*la unica manera de que funcione es que .card tenga el position: relative;*/ 
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: #FFFFFF;
+}
+
+.card::before {
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+    transition: transform 1000ms;
+}
+
+.card::after {
+	bottom: 0;
+	clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+	transform: translateY(100%);
+    transition: transform 1000ms;
+}
+
+.card:hover::before,
+.card:hover::after {
+	transform: translateY(0);
+}

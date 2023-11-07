@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Urbanist:wght@400;700&display=swap');
+
+:root {
+    --text: rgb(14, 11, 11);
+    --background: rgb(239, 235, 235);
+    --primary: rgb(61, 47, 48);
+    --secondary: rgb(233, 226, 227);
+    --accent: rgb(144, 111, 114);
+}
+
+/* globales */
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--text);
+    font-weight: 700;
+}
+
+h1 {font-size: 48px;}
+h2 {font-size: 36px;}
+h3 {font-size: 24px;}
+h4 {font-size: 12px;}
+h5 {font-size: 6px;}
+
+
+
+/* contenido especifico */
+
+.header {
+    background-color: var(--background);
+}
+
+.header__links {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.hw:nth-child(odd) {
+    background-color: var(--secondary);
+}
+
+.hw {
+    height: 100vh;
+}

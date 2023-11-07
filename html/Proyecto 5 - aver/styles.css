@@ -1,0 +1,209 @@
+:root {
+    --text: rgb(253, 253, 253);
+    --background: #1a1a1a;
+    --primary: rgb(143, 148, 153);
+    --secondary: rgb(201, 204, 207);
+    --accent: rgb(97, 102, 107);
+
+    --cliphide: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --clipshow: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    --title: 'Lato', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+}
+
+/* global */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--background);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--title);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    color: var(--text);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* header */
+
+.header {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 100%), url(img/background3.jpg) no-repeat center/cover;
+}
+
+.header__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: var(--title);
+    font-size: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* wrapper de los links */
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__menu {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.nav__menu:hover .menu__box {
+    clip-path: var(--clipshow);
+}
+
+.menu__link--inside:hover {
+    background-color: #333131;
+}
+
+.menu__box {
+    position: absolute; /* este codigo arregló el margin y el padding de la barra de navegación */
+    content: '';
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+
+    padding: 0;
+    width: max-content;
+
+    background-color: #1a1a1a;
+    list-style: none;
+
+    clip-path: var(--cliphide);
+    transition: clip-path .3s;
+
+
+    transform: translateY(100%);
+}
+
+.menu__inside {
+    height: 100%;
+}
+
+.menu__link--inside {
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+/* flecha gris */
+
+.flecha-gris {
+    position: relative;
+    width: 100%;
+}
+
+.flecha-gris::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+
+    left: calc(50% - 100px);
+    top: calc(50% + 60vh);
+
+
+    width: 200px;
+    height: 200px;
+    background-color: var(--text);
+    clip-path: polygon(50% 75%, 100% 60%, 100% 70%, 50% 85%, 0% 70%, 0% 60%, 50% 75%); 
+    transition: transform .3s ease;   
+}
+
+.flecha-gris:hover::after {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+/* un contador estatico que me va a seguir el resto de mi vida*/
+
+.contador {
+    content: '';
+    position: fixed;
+    z-index: 2;
+
+    top: calc(90% - 22.5px);
+    left: 40px;
+
+    height: 45px;
+    width: 450px;
+    background-color: var(--accent);
+    border-radius: 10px;
+
+}
+
+#showscroll {
+    font-size: 30px;
+    font-family: var(--font2);
+}
+
+/* empezamos con el main y las demas secciones */
+
+.color1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+.color2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.color3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}

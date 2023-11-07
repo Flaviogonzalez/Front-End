@@ -1,0 +1,261 @@
+:root {
+    --text: rgb(27, 19, 25);
+    --background: rgb(249, 246, 248);
+    --primary: rgb(185, 157, 180);
+    --secondary: rgb(219, 204, 216);
+    --accent: rgb(128, 91, 121);
+    --blank: rgb(255, 255, 255);
+
+    --font: 'Lato' , sans-serif;
+}
+
+/* globales */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before *::after {
+    box-sizing: inherit;
+}
+
+/* general */
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--font);
+}
+
+h1, h2, h3 {
+    font-family: var(--font);
+    color: var(--text);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* herramientas */
+
+
+.linea-gris {
+    height: 1px;
+    margin: 0 auto;
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    /* background-color: rgba(208,215,219,.8); */
+}
+
+.mtop-96 {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+
+/* header */
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 250px;
+    margin: 0 15%;
+
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 0px 0px 20px 20px;
+}
+
+.header__title {
+    color: var(--blank);
+    text-align: center;
+}
+
+.header__link {
+    color: var(--blank);
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* dedicacion */
+
+.dedicacion__title {
+    text-align: center;
+}
+
+.dedicacion__section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+
+    padding: 20px 80px;
+    height: 650px;
+}
+
+.dedicacion-bg {
+    /* background: linear-gradient(100deg, #321321 30%, rgba(0, 0, 0, 0) 30%), url(img/blog2.jpg); */
+    background: linear-gradient(105deg, #000 40%, rgba(0, 0, 0, 0) 0%), url('img/usabandera.jpg');
+    background-size: cover;
+    background-position: 0 0;
+
+}
+
+.dedicacion__text {
+    color: var(--blank);
+    font-family: 'open sans', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+/* cocteles */
+
+.coctel {
+    display: flex;
+    flex-direction: column;
+}
+
+.coctel__title {
+    text-align: center;
+}
+
+.coctel__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    row-gap: 5%;
+
+    padding: 0px;
+    margin: 0 10%;
+}
+
+.coctel__element {
+    position: relative;
+
+    transition: transform 700ms ease;
+
+    padding: 20px;
+    height: 80vh;
+
+
+    /* esto va a estar dentro de coctel img */
+    background-image: url(img/coctel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 4px;
+    box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.3);
+}
+
+.coctel_img1 {
+
+}
+
+
+.coctel_img2 {
+    
+}
+
+.coctel_img3 {
+    
+}
+
+.coctel_img4 {
+    
+}
+
+.coctel_img5 {
+    
+}
+
+.coctel_img6 {
+    
+}
+
+.coctel__element__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: black;
+    opacity: 0.7;
+    transition: opacity 700ms ease;
+        
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%); */
+    border-radius: 4px;
+}
+
+.coctel__text {
+    width: 100%;
+    text-align: center;
+}
+
+.coctel-name,
+.coctel-dsc {
+    color: var(--blank);
+}
+
+
+/* seccion de hover */
+
+
+.coctel__element__shadow:hover {
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%); */
+    opacity: 0;
+}
+
+.coctel__element:hover {
+    transform: scale(1.05);
+}
