@@ -293,11 +293,13 @@ small {font-size: 0.750rem; /* 12px */}
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1000px){
     .header-link {
         display: none;
     }
+}
 
+@media (max-width: 1024px) {
     .guide {
         display: flex;
         flex-direction: column;
