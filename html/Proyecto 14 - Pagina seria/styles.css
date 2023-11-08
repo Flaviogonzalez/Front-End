@@ -268,3 +268,15 @@ small {font-size: 0.750rem; /* 12px */}
         color: white;
     }
 }
+
+@media (max-width: 480px){
+    /* header */
+    .header {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1024px){
+    
+}
