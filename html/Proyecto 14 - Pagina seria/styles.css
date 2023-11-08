@@ -38,6 +38,7 @@ body {
 }
 
 body {
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -93,9 +94,11 @@ small {font-size: 0.750rem; /* 12px */}
 /* emm header */
 
 .header {
-    height: 100vh;
     width: 100vw;
-    background-color: var(--background);
+    height: 100vh;
+    background-image: url(img/layered-waves-haikei.svg);
+    background-size: cover;
+    background-position: 50% 90%;
 }
 
 .header__navbox {
@@ -103,6 +106,85 @@ small {font-size: 0.750rem; /* 12px */}
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 2% 5%;
 }
 
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.header-link {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+    &:hover {
+        background-color: var(--primary);
+    }
+}
+
+.header__front {
+    background-color: transparent;
+    padding: 10% 0 25% 10%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header__front__text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header__front__button {
+    background-color: transparent;
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 25px;
+}
+
+.header__front-button {
+    background-color: var(--primary);
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--accent);
+    }
+}
+
+
+/* main */
+
+
+.guide {
+    background-color: #c62368;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.guide__card {
+    width: 275px;
+    height: 400px;
+    background-color: #fa7268;
+    border-radius: 20px;
+
+}
