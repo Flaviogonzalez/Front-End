@@ -176,15 +176,95 @@ small {font-size: 0.750rem; /* 12px */}
     width: 100vw;
     height: 100vh;
 
+
+
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-items: center;
 }
 
 .guide__card {
-    width: 275px;
-    height: 400px;
+
+    padding: 10px;
+    word-break: break-all; /* QUIEBRA LA ORACION SALTANDO A LA SIGUIENTE LINEA SI SE PRODUCE OVERFLOW DE TEXTO */
+    min-height: auto;
+
+    text-align: center;
+
+    width: 60%;
+    height: 60%;
     background-color: #fa7268;
     border-radius: 20px;
+}
 
+.blackline {
+    margin: 20px 10px;
+    background-color: #c62368;
+    max-width: 100%;
+    height: 3px;
+    border-radius: 2px;
+}
+
+
+/* FOOTER */
+
+
+.footer {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/layered-waves-haikei-invertido.svg);
+    background-size: cover;
+
+    padding: 20px 0 0 0;
+
+    bottom: 0;
+    right: 0;
+}
+
+.footer__container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: -50px;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    grid-row: 2 / 3;
+
+    padding: 5%;
+}
+
+.footer-link {
+    color: gray;
+    transition: all 300ms ease;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.footer-privacy {
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.Privacy-link {
+    color: gray;
+    transition: all 300ms ease;
+
+    &:hover {
+        color: white;
+    }
 }
