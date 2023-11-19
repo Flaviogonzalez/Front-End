@@ -1,0 +1,5 @@
+@use 'base' as v;
+
+h1 {
+    color: v.$azul;
+}
