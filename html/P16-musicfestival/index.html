@@ -12,15 +12,236 @@
 </head>
 <body>
     <header class="header">
-        <div class="contenedor_header">
+        <div class="contenedor contenido__header">
             <h1>ROCK & EDM FESTIVAL</h1>
 
-            <nav class="navegador-principal">
-                <a href="#">Line up</a>
-                <a href="#">Galeria</a>
-                <a href="#">boletos</a>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">boletos</a>
             </nav>
         </div>
     </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>ROCK & EDM FESTIVAL</h2>
+                <p>na sos re trolo</p>
+            </div>
+        </div>
+
+        <video src="video/concierto.mp4" autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" src="build/img/imagen_vocalista.jpg" alt="Vocalista">
+            </picture>
+        </div>
+
+        <div class="contenido-festival">
+            <h2>ROCK AND EDM FESTIVAL</h2>
+            <p class="fecha">2022 y tu mama en tanga</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus sequi praesentium veritatis pariatur beatae natus. Esse consectetur libero maiores consequuntur debitis illum laboriosam repellat cumque temporibus, asperiores explicabo nobis?</p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia"> el dia de hoy</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        14:00 | <span>tu mama en tanga</span>
+                    </li>
+                    <li>
+                        15:00 | <span>tu mama en calzones</span>
+                    </li>
+                    <li>
+                        16:00 | <span>tu mama en bombacha</span>
+                    </li>
+                    <li>
+                        17:00 | <span>tu mama en boxer</span>
+                    </li>
+                    <li>
+                        18:00 | <span>tu mama en zunga</span>
+                    </li>
+                    <li>
+                        19:00 | <span>tu mama en pañales</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        14:00 | <span>tu mama en tanga</span>
+                    </li>
+                    <li>
+                        15:00 | <span>tu tia en tanga</span>
+                    </li>
+                    <li>
+                        16:00 | <span>tu hermana en tanga</span>
+                    </li>
+                    <li>
+                        17:00 | <span>tu prima en tanga</span>
+                    </li>
+                    <li>
+                        18:00 | <span>tu abuela en tanga</span>
+                    </li>
+                    <li>
+                        19:00 | <span>tu hija en tanga</span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <p class="dia"> el dia de mañana</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        14:00 | <span>vas a tener muchos hijos</span>
+                    </li>
+                    <li>
+                        15:00 | <span>te vas a quejar</span>
+                    </li>
+                    <li>
+                        16:00 | <span>le metes una denuncia a tu novio por acoso</span>
+                    </li>
+                    <li>
+                        17:00 | <span>te sale bien y ganas el juicio</span>
+                    </li>
+                    <li>
+                        18:00 | <span>el chabon se manda una macana y queda en cana</span>
+                    </li>
+                    <li>
+                        19:00 | <span>te quejas porque se queda en cana</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        14:00 | <span>no tengo experiencia porque no tengo laburo</span>
+                    </li>
+
+                    <li>
+                        15:00 | <span>no tengo laburo porque no tengo experiencia</span>
+                    </li>
+
+                    <li>
+                        16:00 | <span>no tengo experiencia porque no tengo novia</span>
+                    </li>
+
+                    <li>
+                        17:00 | <span>no tengo novia porque no quiero (aunque la logica aplica igual)</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>soy un boludo por no tener laburo ni novia</span>
+                    </li>
+
+                    <li>
+                        19:00 | <span>y para dejar de ser un boludo hay que ganar experiencia</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+
+        <ul class="galeria-imagenes"></ul>
+
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>
+            boletos
+        </h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">pase un dia</p>
+
+                <header class="pase-header">
+                    <p>incluye</p>
+                </header>
+
+                <div class="pase-body">
+                    <ul>
+                        <li>
+                            Acceso a ambos escenarios
+                        </li>
+                        <li>
+                            incluye comida bro
+                        </li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>100$</p>
+                </footer>
+
+            </div>
+
+            <div class="premium pase">
+                <p class="nombre-pase">pase 2 dia</p>
+                <header class="pase-header">
+                    <p>incluye</p>
+                </header>
+
+                <div class="pase-body">
+                    <ul>
+                        <li>
+                            Acceso a ambos escenarios
+                        </li>
+                        <li>
+                            incluye comida bro
+                        </li>
+                        <li>
+                            incluye gaseosa
+                        </li>
+                        <li>
+                            incluye y una camisa
+                        </li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>200$</p>
+                </footer>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>ROCK & EDM Festival. allá le reservan los derechos</p>
+    </footer>
+
+    <script src="build/js/galeria.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@
   <section>Sección 7</section>
   
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
-  <script>
+  <!-- <script>
     // JavaScript para Scroll Suave Continuo con Rueda del Mouse
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     let targetScroll = currentScroll;
@@ -47,15 +47,34 @@
     }
 
     function smoothScroll() {
-    const smoothness = 0.05; // Ajusta la suavidad del scroll
+    const smoothness = .05; // Ajusta la suavidad del scroll
     currentScroll += (targetScroll - currentScroll) * smoothness;
     document.documentElement.scrollTop = currentScroll;
+
+      // document.documentElement.scrollTop retorna numero
+
+
 
     requestAnimationFrame(smoothScroll);
     }
 
     window.addEventListener('wheel', handleScroll);
     smoothScroll();
+  </script> -->
+
+  <script>
+    let scroll = window.scrollY;
+    let setScroll = scroll;
+
+    function myscroll() {
+      window.scroll({
+      top: setScroll,
+      left: 0,
+      behavior: "smooth"
+    })
+    }
+
+    window.addEventListener('wheel', myscroll);
   </script>
 </body>
 </html>

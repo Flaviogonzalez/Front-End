@@ -1,9 +1,16 @@
 // Obtén los elementos relevantes del DOM
-const chatSubmitDesc = document.querySelector('.desc-inputs .chat-submit');
-const ChatSubmitChat = document.querySelector(".chat-input .chat-submit2");
-const chatInputDesc = document.querySelector('.desc-inputs .chat-text');
-const chatInputMain = document.querySelector('.chat-input .chat-text2');
 const chatArray = document.querySelector('.chatarray');
+
+
+const ChatSubmitChat = document.querySelector(".chat-input .chat-submit2");
+
+const chatSubmitDesc = document.querySelector('.desc-inputs .chat-submit');
+
+
+const chatInputDesc = document.querySelector('.desc-inputs .chat-text');
+
+const chatInputMain = document.querySelector('.chat-input .chat-text2');
+
 
 // Agrega un evento de clic al botón chat-submit
 chatSubmitDesc.addEventListener('click', function() {
